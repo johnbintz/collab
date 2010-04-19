@@ -76,8 +76,4 @@ ActiveRecord::Schema.define(:version => 20100316041234) do
     t.datetime "updated_at"
   end
 
-  add_foreign_key "projects", "users", :name => "projects_owner_id_fk", :column => "owner_id"
-
-  add_foreign_key "tasks", "users", :name => "tasks_owner_id_fk", :column => "owner_id"
-
 end
